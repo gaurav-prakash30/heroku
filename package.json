@@ -1,0 +1,19 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "description": "Integration to postgres",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaurav-prakash30/heroku.git"
+  },
+  "author": "gaurav prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaurav-prakash30/heroku/issues"
+  },
+  "homepage": "https://github.com/gaurav-prakash30/heroku#readme"
+}
