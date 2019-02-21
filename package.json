@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/gaurav-prakash30/heroku#readme",
   "dependencies": {
-    "pg": "^7.8.0"
+    "pg": "^7.8.1"
   }
 }
