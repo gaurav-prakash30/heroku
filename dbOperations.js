@@ -9,8 +9,8 @@ module.exports = {
 
         client.connect();
 
-        var query = client.query("select * from contact");
-
+        var query = client.query("select * from Contact");
+         console.log(JSON.stringify(query));   
         query.on("row", function (row, result) { 
             result.addRow(row); 
         });
