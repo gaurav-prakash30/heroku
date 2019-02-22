@@ -9,7 +9,7 @@ module.exports = {
 
         client.connect();
 
-        var query = client.query("select * from Contact");
+        var query = client.query("select * from salesforce.Contact");
          console.log(JSON.stringify(query));   
         query.on("row", function (row, result) { 
             result.addRow(row); 
@@ -31,7 +31,7 @@ module.exports = {
         var client = new pg.Client(conString);
 
         client.connect();
-        var query = client.query("insert into Contact (FirstName,LastName,email,MobilePhone) "+ 
+        var query = client.query("insert into salesforce.Contact (FirstName,LastName,email,MobilePhone) "+ 
                                 "values ('"+req.query.fName+"','"+req.query.lName+"','"+
                                     req.query.email+"','"+req.query.mbl+"')");
     
@@ -51,7 +51,7 @@ module.exports = {
 
         client.connect();
          
-        var query = client.query( "Delete from Contact Where id ="+req.query.id);
+        var query = client.query( "Delete from salesforce.Contact Where id ="+req.query.id);
     
         query.on("end", function (result) {          
             client.end(); 
