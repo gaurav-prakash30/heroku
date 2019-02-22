@@ -12,9 +12,9 @@
     "serve-favicon": "*",
     "cookie-parser": "~1.0.1",
     "jade": "*",
-    "jaydata" : "*",
-    "xmldom" : "*",
-    "q" : "*",
+    "jaydata": "*",
+    "xmldom": "*",
+    "q": "*",
     "express-error-handler": "*",
     "pg": "*"
   },
@@ -22,7 +22,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node App.js"
-  }, 
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/"
