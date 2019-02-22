@@ -31,7 +31,7 @@ module.exports = {
         var client = new pg.Client(conString);
 
         client.connect();
-        var query = client.query("insert into employee (firstName,lastName,email,mobile) "+ 
+        var query = client.query("insert into Contact (FirstName,LastName,email,MobilePhone) "+ 
                                 "values ('"+req.query.fName+"','"+req.query.lName+"','"+
                                     req.query.email+"','"+req.query.mbl+"')");
     
@@ -51,7 +51,7 @@ module.exports = {
 
         client.connect();
          
-        var query = client.query( "Delete from employee Where id ="+req.query.id);
+        var query = client.query( "Delete from Contact Where id ="+req.query.id);
     
         query.on("end", function (result) {          
             client.end(); 
@@ -60,7 +60,7 @@ module.exports = {
         });
 
     },
-    
+    /*
     createTable : function(req, res){
         var pg = require('pg');   
         
@@ -102,7 +102,7 @@ module.exports = {
             res.end();  
         });
 
-    }
+    }*/
 
     
 };
