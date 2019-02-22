@@ -9,8 +9,7 @@ module.exports = {
 
         client.connect();
 
-        var query = client.query("select * from salesforce.Contact");
-         console.log(JSON.stringify(query));   
+        var query = client.query("select * from salesforce.Contact");  
         query.on("row", function (row, result) { 
             result.addRow(row); 
         });
