@@ -91,9 +91,8 @@
                 
                 $scope.getAllRec = function(){ 
                      $http({method: 'GET', url: '/db/readRecords'}).
-                        success(function(data, status) { 
-                            alert(data);
-                            alert(JSON.stringify(data));
+                        success(function(data, status) {
+                            console.log(data); 
                               $scope.dataset = data; 
                         }).
                         error(function(data, status) {
